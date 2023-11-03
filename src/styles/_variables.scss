@@ -1,0 +1,13 @@
+$background-color: #F15B36;
+$foreground-color: #ffffff;
+$darker-foreground-color: #b3b3b3;
+$darker-background-color: darken($background-color, 20%);
+
+$accent: #1db954;
+$accent-active: #1ed760;
+$accent-inactive: $background-color;
+$border-active: $accent-active;
+$border-inactive: #535353;
+$error: #e22134;
+
+$font-main: "Work Sans", sans-serif;

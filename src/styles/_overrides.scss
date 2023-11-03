@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+@import "./variables.scss";
+
+:root {
+	color: $background-color;
+	background-color: $foreground-color;
+
+    font-family: $font-main !important;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	color: transparent !important;
+    font-family: $font-main !important;
+    line-height: 1.25 !important;
+}
+
+$link: $background-color;
+$title-color: $background-color;
+$subtitle-color: $darker-foreground-color;
+$body-color: $foreground-color;
+
+a {
+	&:hover {
+		color: lighten($color: $background-color, $amount: 20) !important;
+	}
+
+	&:active,
+	&:focus {
+		color: $background-color !important;
+	}
+}
+
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/components/card.sass";
+@import "../../node_modules/bulma/sass/components/tabs.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/elements/container.sass";
+@import "../../node_modules/bulma/sass/elements/image.sass";
+@import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../node_modules/bulma/sass/layout/hero.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
+
+.is-no-size {
+	padding: 0em 0em;
+}
+
+.button {
+    background-color: transparent !important;
+    border: 1px solid $foreground-color !important;
+    color: $foreground-color !important;
+    border-radius: 6px !important;
+
+    font-family: $font-main !important;
+
+    &:hover,
+    &:active,
+	&:focus {
+        background-color: $foreground-color !important;
+        color: $background-color !important;
+    }
+}
+
+.columns {
+    margin: 1em 0em;
+}
+
+.card {
+    margin: 0em 1em;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw !important;    
+
+    #navbar-menu {
+        background-color: $background-color !important;
+
+        width: inherit !important;
+    
+        .navbar-end {
+            flex-grow: 1;
+            justify-content: center;
+        }
+    }
+    
+    .navbar-item {
+        margin: .5em 1em !important;
+        padding: 1em 1.5em !important;
+        border-radius: 6px !important;
+    
+        &:hover,
+        &:active,
+        &:focus {
+            color: $foreground-color !important;
+            background-color: $darker-background-color !important;
+        }
+    
+        color: $foreground-color;
+        font-weight: 600 !important;
+        font-size: 16px;
+        text-transform: uppercase;
+    }    
+}
+

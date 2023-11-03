@@ -1,0 +1,107 @@
+@import "./variables";
+
+.orange-text {
+    color: $background-color !important;
+}
+
+#home {
+    .store-bg {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        padding: 6em 0em !important;
+    }
+
+    padding: 0em !important;
+
+    .container {
+        padding: 3em 8em;
+        .first-column {
+            h1 {
+                color: $foreground-color;
+                font-size: 4em !important;
+                font-weight: 800 !important;
+            }
+
+            h2 {
+                color: $foreground-color;
+                font-size: 1.5em !important;
+                font-weight: 800 !important;
+            }
+        }
+
+        .second-column {
+            .store-pic {
+                border-radius: 16px !important;
+                box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+            }
+        }
+    }
+}
+
+#about {
+    .container {
+        padding: 3em 8em;
+
+        .intro {
+            color: $background-color !important;
+
+            .about-header {
+                font-size: 4vw !important;
+                font-weight: 800 !important;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#packages {
+    .container {
+        padding: 3em 8em;
+
+        .intro {
+            color: $background-color !important;
+
+            .packages-header {
+                font-size: 4vw !important;
+                font-weight: 800 !important;
+            }
+        }
+    }
+}
+
+#hairstyles {
+    .container {
+        padding: 3em 8em;
+
+        .intro {
+            color: $background-color !important;
+
+            .hairstyles-header {
+                font-size: 4vw !important;
+                font-weight: 800 !important;
+            }
+        }
+    }
+}
+
+#contact {
+    background-color: #646464 !important;
+    color: $foreground-color !important;
+    
+    .container {
+        padding: 3em 8em;
+
+        .contact-title {
+            font-size: 3vw !important;
+            font-weight: 800 !important;
+        }
+
+        .contacts {
+            h3 {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
