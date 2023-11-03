@@ -25,6 +25,11 @@ $title-color: $background-color;
 $subtitle-color: $darker-foreground-color;
 $body-color: $foreground-color;
 
+ul,
+ol {
+    list-style: square;
+}
+
 a {
 	&:hover {
 		color: lighten($color: $background-color, $amount: 20) !important;
@@ -80,9 +85,6 @@ a {
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    z-index: 100;
     width: 100vw !important;    
 
     #navbar-menu {

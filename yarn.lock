@@ -671,6 +671,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-animate-on-scroll@npm:^2":
+  version: 2.1.7
+  resolution: "@types/react-animate-on-scroll@npm:2.1.7"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 70f53eb0fffb8ff79b551ee5cf4f65088e46ed9f5c38845bda999a0fe733220620d44bd8e7b5a7efa05213a80aad11dd11aff0b579116538144dde6911c3d506
+  languageName: node
+  linkType: hard
+
 "@types/react-dom@npm:^18.2.7":
   version: 18.2.14
   resolution: "@types/react-dom@npm:18.2.14"
@@ -911,6 +920,13 @@ __metadata:
     json-schema-traverse: "npm:^0.4.1"
     uri-js: "npm:^4.2.2"
   checksum: 41e23642cbe545889245b9d2a45854ebba51cda6c778ebced9649420d9205f2efb39cb43dbc41e358409223b1ea43303ae4839db682c848b891e4811da1a5a71
+  languageName: node
+  linkType: hard
+
+"animate.css@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "animate.css@npm:4.1.1"
+  checksum: 28fcf5a5f502e4c12186846d22aa1cd63b835955160a97116930c78bff8a89135aa5c57f94010252a29456ada7cfc8ed8791cac02521ec6402befaf883937159
   languageName: node
   linkType: hard
 
@@ -2454,7 +2470,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.9, prop-types@npm:^15.7.2":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -2476,6 +2492,19 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 900a93d3cdae3acd7d16f642c29a642aea32c2026446151f0778c62ac089d4b8e6c986811076e1ae180a694cedf077d453a11b58ff0a865629a4f82ab558e102
+  languageName: node
+  linkType: hard
+
+"react-animate-on-scroll@npm:^2.1.7":
+  version: 2.1.7
+  resolution: "react-animate-on-scroll@npm:2.1.7"
+  dependencies:
+    lodash.throttle: "npm:^4.1.1"
+    prop-types: "npm:^15.5.9"
+  peerDependencies:
+    classnames: ^2.2.5
+    react: ">= 15.4.1 < 17.0.0-0"
+  checksum: 00bc83965134a6abe3e93acb663a0654e631e9d03122183ec6c73d75ba5c16476412701449bf1ee430c7327f805e593d07f8bca90408267b87620e3bf4bba419
   languageName: node
   linkType: hard
 
@@ -2971,16 +3000,19 @@ __metadata:
   resolution: "website@workspace:."
   dependencies:
     "@types/react": "npm:^18.2.15"
+    "@types/react-animate-on-scroll": "npm:^2"
     "@types/react-dom": "npm:^18.2.7"
     "@types/react-scroll": "npm:^1"
     "@typescript-eslint/eslint-plugin": "npm:^6.0.0"
     "@typescript-eslint/parser": "npm:^6.0.0"
     "@vitejs/plugin-react": "npm:^4.0.3"
+    animate.css: "npm:^4.1.1"
     bulma: "npm:^0.9.4"
     eslint: "npm:^8.45.0"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.3"
     react: "npm:^18.2.0"
+    react-animate-on-scroll: "npm:^2.1.7"
     react-dom: "npm:^18.2.0"
     react-router-dom: "npm:^6.18.0"
     react-scroll: "npm:^1.9.0"
