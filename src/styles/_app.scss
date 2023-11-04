@@ -1,120 +1,169 @@
 @import "./variables";
 
 .orange-text {
-    color: $background-color !important;
+	color: $background-color !important;
+}
+
+.is-no-size {
+	padding: 0em 0em;
+}
+
+.navbar {
+	border-bottom: 1px solid $foreground-color !important;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+	#navbar-menu {
+		.navbar-start {
+			padding: .5em 0em;
+			flex-grow: 1;
+			justify-content: center;
+
+			img {
+				height: 70px !important;
+			}
+
+			.banner {
+				margin: 0em 2em 0em 0em;
+			}
+		}
+	}
 }
 
 #home {
-    .store-bg {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+	padding: 0em 0em !important;
 
-        padding: 7em 0em !important;
-    }
+	.store-bg {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 
-    padding: 0em !important;
+		padding: 5vw 0em !important;
+	}
 
-    .container {
-        padding: 3em 8em;
-        .first-column {
-            h1 {
-                color: $foreground-color;
-                font-size: 4em !important;
-                font-weight: 800 !important;
-            }
+	.container {
+		padding: 4.5em 0em;
+		.first-column {
+			h1 {
+				color: $foreground-color;
+				font-size: 4em !important;
+				font-weight: 800 !important;
+			}
 
-            h2 {
-                color: $foreground-color;
-                font-size: 1.5em !important;
-                font-weight: 800 !important;
-            }
-        }
-
-        .second-column {
-            .store-pic {
-                border-radius: 16px !important;
-                box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-            }
-        }
-    }
+			h2 {
+				color: $foreground-color;
+				font-size: 1.5em !important;
+				font-weight: 800 !important;
+			}
+		}
+	}
 }
 
 #about {
-    .container {
-        padding: 3em 8em;
+	.container {
+		padding: 3em;
 
-        .intro {
-            color: $background-color !important;
+		.intro {
+			color: $foreground-color !important;
 
-            .about-header {
-                font-size: 4vw !important;
-                font-weight: 800 !important;
-                text-transform: uppercase;
-            }
-        }
-    }
+			.about-header {
+				font-size: 4vw !important;
+				font-weight: 800 !important;
+				text-transform: uppercase;
+			}
+		}
+
+		.about-content {
+			.content {
+				font-size: 18px;
+			}
+
+			.store-pic {
+				border-radius: 8px;
+				
+				box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+			}
+		}
+	}
 }
 
 #packages {
-    .container {
-        flex-direction: column;
+	.container {
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
-        padding: 3em 8em;
+		padding: 3em;
 
-        .intro {
-            color: $background-color !important;
+		.intro {
+			color: $foreground-color !important;
 
-            .packages-header {
-                font-size: 4vw !important;
-                font-weight: 800 !important;
-            }
-        }
+			.packages-header {
+				font-size: 4vw !important;
+				font-weight: 800 !important;
+			}
+		}
 
-        .card {
-            width: auto !important;
-            min-height: 230px !important;
+		.card {
+			width: auto !important;
+			min-height: 230px !important;
 
-            @include breakpoint(extra_small_devices) {
-                width: 340px !important;
-            }
-        }
-    }
+			@include breakpoint(extra_small_devices) {
+				width: 340px !important;
+			}
+		}
+	}
 }
 
 #hairstyles {
-    .container {
-        padding: 3em 8em;
+	.container {
+		padding: 3em;
 
-        .intro {
-            color: $background-color !important;
+		.intro {
+			color: $foreground-color !important;
 
-            .hairstyles-header {
-                font-size: 4vw !important;
-                font-weight: 800 !important;
-            }
-        }
-    }
+			.hairstyles-header {
+				font-size: 4vw !important;
+				font-weight: 800 !important;
+			}
+		}
+
+		.hairstyles-images {
+			margin: 2em 0em;
+		}
+	}
 }
 
 #contact {
-    background-color: #646464 !important;
-    color: $foreground-color !important;
-    
-    .container {
-        padding: 3em 8em;
+	background-color: #646464 !important;
+	color: $foreground-color !important;
 
-        .contact-title {
-            font-size: 3vw !important;
-            font-weight: 800 !important;
-        }
+	.container {
+		padding: 3em 8em;
 
-        .contacts {
-            h3 {
-                text-transform: uppercase;
-            }
-        }
-    }
+		.contact-title {
+			color: $foreground-color !important;
+			font-size: 3vw !important;
+			font-weight: 800 !important;
+		}
+
+		.contacts {
+			h3 {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+#footer {
+	background-color: darken($darker-foreground-color, 40%) !important;
+
+	.container {
+		padding: 2em 0em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		color: $foreground-color !important;
+	}
 }
