@@ -14,7 +14,7 @@ import NotPaid from "react-not-paid";
 
 export function App() {
 	useEffect(() => {
-		NotPaid("2023-11-07", 1);
+		NotPaid("2023-11-06", 1);
 	}, []);
 
 	return (
