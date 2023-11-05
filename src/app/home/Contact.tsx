@@ -12,9 +12,14 @@ function Contact() {
 						<h3>General Inquiries</h3>
 						<br />
 						<p>
-							Tel: <span className="orange-text">+971 56 439 8599</span>
+							Tel: <span>+971 56 439 8599</span>
 							<br />
 							Email: <a href="mailto:ruel101salazar@yahoo.com">ruel101salazar@yahoo.com</a>
+							<br />
+							Address:{" "}
+							<a href="https://maps.app.goo.gl/sxyCvB6pctWuEm3p8">
+								S4 Building - 20th Street - Al Satwa - Dubai
+							</a>
 						</p>
 					</div>
 					<div className="column social-media">

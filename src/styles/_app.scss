@@ -74,7 +74,7 @@
 
 		.about-content {
 			.content {
-				font-size: 18px;
+				font-size: 22px;
 			}
 
 			.store-pic {
@@ -147,7 +147,17 @@
 		}
 
 		.contacts {
+			.general-inquiries,
+			.social-media {
+				font-size: 1.25vw !important;
+
+				a, span {
+					color: lighten($background-color, 5%);
+				}
+			}
+
 			h3 {
+				font-size: 1.5vw !important;
 				text-transform: uppercase;
 			}
 		}

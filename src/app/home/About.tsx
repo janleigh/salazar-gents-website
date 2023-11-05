@@ -21,28 +21,19 @@ function About() {
 				</ScrollAnimation>
 				<ScrollAnimation animateIn="animate__zoomIn" animateOnce={true}>
 					<div className="about-content">
-						<div className="columns is-half">
+						<div className="columns is-half is-vcentered">
 							<div className="column">
 								<div className="card">
 									<div className="card-content">
 										<div className="content">
-											Our super strong conviction is that visiting a barbershop must never be just
-											about “getting a haircut because I do so every 3 months”. This must be
-											something more than a mere errand. Moreover, we are positive that it must be
-											an experience to remember.
+											Dubai is a major commercial center where appearance matters greatly. It is a
+											facet of our public persona.{" "}
+											<span className="orange-text">Salazar Gents Salon</span> owes you the
+											excellent service that you have so richly merited. Give us a chance to repay
+											you with services that are both unmatched in quality and cost. All you have
+											to do is kick back and unwind. Let our men do what they do best.
 											<br />
-											<br />
-											We are absolutely confident that considering all the fuzz and the chaos in
-											our modern lives, there simply must be some place where a man can go to, sit
-											for a nice small talk with other men, drink a glass of fine whiskey and
-											while doing that also get his facial and head hair taken care of.
-											<br />
-											<br />
-											Probably thanks to our strong traditional values, business principles and
-											the quality of our barbering services we are definitely the number one
-											classic barbershop for men. We hope to offer you an adventure back in time,
-											to the historical period of the 1960s, when the traditional barbershop
-											culture was still alive.
+											<br />— <span className="orange-text">Salazar Gents Salon</span>
 										</div>
 									</div>
 								</div>

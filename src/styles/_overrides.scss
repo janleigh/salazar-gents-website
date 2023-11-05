@@ -44,6 +44,10 @@ a {
 	}
 }
 
+h1, h3 {
+	font-family: $ui-font !important;
+}
+
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/form/_all.sass";
 @import "../../node_modules/bulma/sass/helpers/_all.sass";
