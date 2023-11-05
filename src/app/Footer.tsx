@@ -1,6 +1,6 @@
 function Footer() {
 	return (
-		<div id="footer">
+		<div className="column" id="footer">
 			<div className="container">
 				<span>
 					Powered using <a href="https://reactjs.org">React</a>, <a href="https://vitejs.dev/">Vite</a>, and{" "}

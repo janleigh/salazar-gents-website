@@ -5,6 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
+function checkIfMobile() {
+	if (window.innerWidth < 768) {
+		return 1;
+	} else {
+		return 3;
+	}
+}
+
 function HairStyles() {
 	return (
 		<div className="column" id="hairstyles">
@@ -34,7 +42,7 @@ function HairStyles() {
 							navigation
 							pagination={{ clickable: true }}
 							scrollbar={{ draggable: true }}
-							slidesPerView={3}
+							slidesPerView={checkIfMobile()}
 							spaceBetween={20}
 							loop={true}
 							autoplay={{
