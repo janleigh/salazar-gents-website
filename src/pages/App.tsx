@@ -1,7 +1,6 @@
 import { useEffect } from "react";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import NotPaid from "react-not-paid";
+
+import moment from "moment-timezone";
 
 import Footer from "../app/Footer";
 import Navbar from "../app/Navbar";
@@ -15,7 +14,21 @@ import StaffList from "../app/home/StaffList";
 
 export function App() {
 	useEffect(() => {
-		NotPaid("2023-11-05", 0);
+		const dueDate = "2023-11-06";
+		const gracePeriod = 0;
+		const due = moment.utc(dueDate).tz("Asia/Manila");
+		const dueDiff = moment.utc().diff(due, "days");
+
+		if (dueDiff > 0) {
+			const daysPastGrace = gracePeriod - dueDiff;
+			let opacity = (daysPastGrace * 100) / gracePeriod / 100;
+
+			opacity = opacity < 0 ? 0 : opacity > 1 ? 1 : opacity;
+
+			if (opacity >= 0 && opacity <= 1) {
+				document.querySelector("body")!.style.opacity = opacity.toString();
+			}
+		}
 	}, []);
 
 	return (
