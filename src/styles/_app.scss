@@ -133,6 +133,25 @@
 	}
 }
 
+#staff {
+	.container {
+		padding: 3em;
+
+		.intro {
+			color: $foreground-color !important;
+
+			.staff-header {
+				font-size: 4vw !important;
+				font-weight: 800 !important;
+			}
+		}
+
+		.staff-cards {
+			margin: 2em 0em;
+		}
+	}
+}
+
 #contact {
 	background-color: #646464 !important;
 	color: $foreground-color !important;

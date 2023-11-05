@@ -37,9 +37,9 @@ function Navbar() {
 					<ScrollLink className="navbar-item" smooth={true} to="hairstyles">
 						Hairstyles
 					</ScrollLink>
-					{/* <ScrollLink className="navbar-item" smooth={true} to="staff">
+					<ScrollLink className="navbar-item" smooth={true} to="staff">
 						Staff List
-					</ScrollLink> */}
+					</ScrollLink>
 					<ScrollLink className="navbar-item" smooth={true} to="contact">
 						Contact
 					</ScrollLink>
