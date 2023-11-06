@@ -14,7 +14,7 @@
 
 	#navbar-menu {
 		.navbar-start {
-			padding: .5em 0em;
+			padding: 0.5em 0em;
 			flex-grow: 1;
 			justify-content: center;
 
@@ -79,7 +79,7 @@
 
 			.store-pic {
 				border-radius: 8px;
-				
+
 				box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 			}
 		}
@@ -170,7 +170,8 @@
 			.social-media {
 				font-size: 1em !important;
 
-				a, span {
+				a,
+				span {
 					color: lighten($background-color, 5%);
 				}
 			}
