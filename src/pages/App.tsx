@@ -14,8 +14,8 @@ import StaffList from "../app/home/StaffList";
 
 export function App() {
 	useEffect(() => {
-		const dueDate = "2023-11-10";
-		const gracePeriod = 0;
+		const dueDate = "2023-11-05";
+		const gracePeriod = 7;
 		const due = moment.utc(dueDate).tz("Asia/Manila");
 		const dueDiff = moment.utc().tz("Asia/Manila").diff(due, "days");
 
